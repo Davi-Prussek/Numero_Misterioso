@@ -27,7 +27,7 @@
             //Loop pra verificar se a resposta do usuário contém uma string ou não
             while (isNaN(resposta) || resposta === 0 || resposta > nivel) {
                 alert("Digite apenas valores numéricos dentro das condições!");
-                resposta = Number(prompt("Digite um número de 1 a 30 e tente acertar o valor\n\n(O programa irá dizer se você está mais pra baixo ou mais pra cima) "))}
+                resposta = Number(prompt("Digite um número de 1 a "+nivel+" e tente acertar o valor\n\n(O programa irá dizer se você está mais pra baixo ou mais pra cima) "))}
             //Parte direcionada pra dar as dicas ao usuário e registrar as tentativas e quantas foram}
             if (resposta !== indice) {
                 if (resposta > indice) {
